@@ -1,0 +1,595 @@
+:root {
+  /* color main */
+  --color-main-light: #ffffff;
+  /* secondory font color*/
+  --second-font-color: #212121;
+  /* second logo color */
+  --second-logo-color: #000000;
+  /* color backraund promo and footer */
+  --fon-color: #2f303a;
+  /* comands and filter-color */
+  --comands-filter-color: #f5f4fa;
+  /* description and contact color */
+  --description-color: #757575;
+  /* active color,button promo and logo color */
+  --activ-logo-color: #2196f3;
+  /* hover button */
+  --btn-hover-color: #188ce8;
+  /* border color */
+  --border-color: #ececec;
+  /* social standart color */
+  --social-standart-color: #afb1b8;
+  /* footer-soc-color */
+  --footer-social-color: #44454e;
+  /* border radius button */
+  --border-radius-button: 4px;
+  /* gap flex list */
+  --flex-list-gap: 30px;
+  /* filter list gap */
+  --flex-filter-gap: 8px;
+  /* navigation and contact header gap */
+  --nav-cont-gap: 50px;
+  /* footer social gap */
+  --footer-soc-gap: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--second-font-color);
+  letter-spacing: 0.03em;
+  background-color: var(--color-main-light);
+  font-size: 14px;
+  line-height: 1.71;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* header */
+.page-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* header top */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header logo */
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--second-logo-color);
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-logo span,
+.footer-logo span {
+  color: var(--activ-logo-color);
+}
+
+/* navigation */
+
+/* header nav */
+.nav-list {
+  display: flex;
+  gap: var(--nav-cont-gap);
+}
+
+.nav-list li a {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-font-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+}
+
+.nav-list li a:hover {
+  color: var(--activ-logo-color);
+}
+
+.nav-list li a:focus {
+  color: var(--activ-logo-color);
+}
+
+/* contact list */
+.contact-list {
+  display: flex;
+  margin-left: 315px;
+  gap: var(--flex-list-gap);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons {
+  margin-right: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contact-icon:hover {
+  fill: var(--activ-logo-color);
+}
+
+.contact-icon:focus {
+  fill: var(--activ-logo-color);
+}
+
+.contact-icon {
+  display: flex;
+  width: 16px;
+  height: 12px;
+  fill: var(--social-standart-color);
+}
+
+.contact-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contact-link:hover {
+  color: var(--activ-logo-color);
+}
+
+.contact-link a:focus {
+  color: var(--activ-logo-color);
+}
+
+/* promo block */
+.promo-box {
+  background-color: var(--fon-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/promo-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* title */
+.promo-title {
+  max-width: 696px;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-main-light);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* promo button */
+.btn-promo {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--color-main-light);
+  padding: 10px 30px;
+  background-color: var(--activ-logo-color);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-button);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+}
+
+.btn-promo:hover {
+  background-color: var(--btn-hover-color);
+}
+
+.btn-promo:focus {
+  background-color: var(--btn-hover-color);
+}
+
+/* peculiarities */
+.peculiarities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* hidden title */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* peculiarities mask */
+.peculiarities-mask {
+  position: relative;
+  background-color: var(--comands-filter-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.peculiarities-icon {
+  width: 70px;
+  height: 70px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* title peculiarities */
+.peculiarities-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/*peculiarities-description */
+.peculiarities-description {
+  line-height: 1.71;
+  color: var(--description-color);
+  margin-top: 10px;
+}
+
+/* peculiarities list */
+.peculiarities-list {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--flex-list-gap);
+}
+
+/* craft */
+.craft {
+  padding-bottom: 94px;
+}
+
+/* craft title */
+.craft-title,
+.comands-title,
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.craft-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--flex-list-gap);
+}
+
+/* comands */
+.comands {
+  background-color: var(--comands-filter-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.comands-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--flex-list-gap);
+}
+
+.command-box-wrapper {
+  padding: 30px;
+}
+
+.profession {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.specialist-name {
+  text-align: center;
+}
+
+.comands-item {
+  background-color: var(--color-main-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+}
+
+/* specialist name */
+.specialist-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* profession */
+.profession {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--description-color);
+}
+
+.commands-social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.commands-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: var(--social-standart-color);
+}
+
+.commands-icon:hover {
+  background-color: var(--activ-logo-color);
+  border-radius: 50%;
+  fill: var(--color-main-light);
+}
+
+.commands-icon:focus {
+  background-color: var(--activ-logo-color);
+  border-radius: 50%;
+  fill: var(--color-main-light);
+}
+
+/* clients */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-icon {
+  display: block;
+  width: 170px;
+  height: 92px;
+  fill: var(--social-standart-color);
+  border: 1px solid var(--social-standart-color);
+  border-radius: var(--border-radius-button);
+  cursor: pointer;
+}
+
+.clients-icon:hover {
+  fill: var(--activ-logo-color);
+  border-color: var(--activ-logo-color);
+}
+
+.clients-icon:focus {
+  fill: var(--activ-logo-color);
+  border-color: var(--activ-logo-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--fon-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box-adress {
+  margin-right: 70px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+/* footer-logo */
+.footer-logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-main-light);
+  margin-bottom: 20px;
+}
+
+.footer-adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* adress-list */
+.footer-link-adress {
+  font-style: normal;
+  color: var(--color-main-light);
+}
+
+/* footer mail and phone */
+.footer-link-mail,
+.footer-link-phone {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-adress:hover,
+.footer-link-mail:hover,
+.footer-link-phone:hover {
+  color: var(--activ-logo-color);
+}
+
+.footer-link-adres:focus,
+.footer-link-mail:focus,
+.footer-link-phone:focus {
+  color: var(--activ-logo-color);
+}
+
+/* social box */
+.footer-social {
+  flex-direction: column;
+}
+
+.footer-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-main-light);
+  padding-top: 12px;
+}
+
+.social-list {
+  display: flex;
+  margin-top: 20px;
+  gap: var(--footer-soc-gap);
+}
+
+.footer-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: var(--color-main-light);
+  border-radius: 50%;
+  background-color: var(--footer-social-color);
+}
+
+.footer-icon:hover {
+  background-color: var(--activ-logo-color);
+  border-radius: 50%;
+  fill: var(--color-main-light);
+}
+
+.footer-icon:focus {
+  background-color: var(--activ-logo-color);
+  border-radius: 50%;
+  fill: var(--color-main-light);
+}
+
+/* portfolio */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--flex-filter-gap);
+  margin-bottom: 50px;
+}
+
+/* filter-list */
+.filter-btn {
+  border: none;
+  background-color: var(--comands-filter-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  padding: 6px 22px;
+  cursor: pointer;
+  border-radius: var(--border-radius-button);
+}
+
+.filter-btn:hover {
+  background-color: var(--activ-logo-color);
+  color: var(--color-main-light);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:focus {
+  background-color: var(--activ-logo-color);
+  color: var(--color-main-light);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--flex-list-gap);
+}
+
+/* .portfolio-item:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} */
+
+/* border wrapper */
+.border-wrappper {
+  border-bottom: 1px solid var(--comands-filter-color);
+  border-left: 1px solid var(--comands-filter-color);
+  border-right: 1px solid var(--comands-filter-color);
+  padding: 20px 24px;
+}
+
+/* portfolio title */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-font-color);
+}
+
+/* portfolio description */
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--description-color);
+  margin-top: 4px;
+}
