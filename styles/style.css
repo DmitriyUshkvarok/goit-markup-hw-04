@@ -129,37 +129,20 @@ body {
   color: var(--activ-logo-color);
 }
 
+.nav-list .current {
+  color: var(--activ-logo-color);
+}
+
 /* contact list */
 .contact-list {
   display: flex;
-  margin-left: 315px;
+  margin-left: auto;
   gap: var(--flex-list-gap);
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-}
-
-.contact-icons {
-  margin-right: 10px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.contact-icon:hover {
-  fill: var(--activ-logo-color);
-}
-
-.contact-icon:focus {
-  fill: var(--activ-logo-color);
-}
-
-.contact-icon {
-  display: flex;
-  width: 16px;
-  height: 12px;
-  fill: var(--social-standart-color);
 }
 
 .contact-link {
@@ -169,13 +152,29 @@ body {
   color: var(--description-color);
   padding-top: 25px;
   padding-bottom: 25px;
+  fill: currentColor;
+}
+
+.contact-icon {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.mail {
+  width: 16px;
+  height: 12px;
+}
+
+.phone {
+  width: 10px;
+  height: 16px;
 }
 
 .contact-link:hover {
   color: var(--activ-logo-color);
 }
 
-.contact-link a:focus {
+.contact-link:focus {
   color: var(--activ-logo-color);
 }
 
@@ -389,10 +388,10 @@ body {
   fill: var(--color-main-light);
 }
 
-.commands-icon:focus {
+.commands-link:focus .commands-icon {
+  fill: var(--color-main-light);
   background-color: var(--activ-logo-color);
   border-radius: 50%;
-  fill: var(--color-main-light);
 }
 
 /* clients */
@@ -421,7 +420,7 @@ body {
   border-color: var(--activ-logo-color);
 }
 
-.clients-icon:focus {
+.client-link:focus .clients-icon {
   fill: var(--activ-logo-color);
   border-color: var(--activ-logo-color);
 }
@@ -439,6 +438,7 @@ body {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 /* footer-logo */
@@ -475,23 +475,18 @@ body {
   color: var(--activ-logo-color);
 }
 
-.footer-link-adres:focus,
+.footer-link-adress:focus,
 .footer-link-mail:focus,
 .footer-link-phone:focus {
   color: var(--activ-logo-color);
 }
 
 /* social box */
-.footer-social {
-  flex-direction: column;
-}
-
 .footer-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-main-light);
-  padding-top: 12px;
 }
 
 .social-list {
@@ -515,7 +510,7 @@ body {
   fill: var(--color-main-light);
 }
 
-.footer-icon:focus {
+.footer-social-link:focus .footer-icon {
   background-color: var(--activ-logo-color);
   border-radius: 50%;
   fill: var(--color-main-light);
@@ -565,9 +560,14 @@ body {
   gap: var(--flex-list-gap);
 }
 
-/* .portfolio-item:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
+.portfolio-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-link:focus {
+  display: block;
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+}
 
 /* border wrapper */
 .border-wrappper {
