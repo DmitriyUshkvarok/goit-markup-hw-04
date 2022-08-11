@@ -57,14 +57,14 @@ img {
 }
 
 body {
+  width: 100%;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   color: var(--second-font-color);
   letter-spacing: 0.03em;
   background-color: var(--color-main-light);
   font-size: 14px;
   line-height: 1.71;
-  width: 100%;
-  max-width: 1600px;
 }
 
 .container {
@@ -153,21 +153,14 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   fill: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-icon {
   display: inline-flex;
   margin-right: 10px;
-}
-
-.mail {
-  width: 16px;
-  height: 12px;
-}
-
-.phone {
-  width: 10px;
-  height: 16px;
 }
 
 .contact-link:hover {
@@ -377,8 +370,6 @@ body {
 
 .commands-icon {
   display: block;
-  width: 44px;
-  height: 44px;
   fill: var(--social-standart-color);
 }
 
@@ -405,23 +396,30 @@ body {
   justify-content: space-between;
 }
 
-.clients-icon {
-  display: block;
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  fill: var(--social-standart-color);
+  fill: currentColor;
+  color: var(--social-standart-color);
   border: 1px solid var(--social-standart-color);
   border-radius: var(--border-radius-button);
   cursor: pointer;
 }
 
-.clients-icon:hover {
-  fill: var(--activ-logo-color);
+.clients-icon {
+  fill: currentColor;
+}
+
+.client-link:hover {
+  color: var(--activ-logo-color);
   border-color: var(--activ-logo-color);
 }
 
 .client-link:focus .clients-icon {
-  fill: var(--activ-logo-color);
+  color: var(--activ-logo-color);
   border-color: var(--activ-logo-color);
 }
 
@@ -497,8 +495,6 @@ body {
 
 .footer-icon {
   display: block;
-  width: 44px;
-  height: 44px;
   fill: var(--color-main-light);
   border-radius: 50%;
   background-color: var(--footer-social-color);
@@ -541,16 +537,12 @@ body {
   border-radius: var(--border-radius-button);
 }
 
-.filter-btn:hover {
-  background-color: var(--activ-logo-color);
-  color: var(--color-main-light);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
-}
-
+.filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--activ-logo-color);
   color: var(--color-main-light);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -566,7 +558,7 @@ body {
 
 .portfolio-link:focus {
   display: block;
-  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* border wrapper */
