@@ -368,21 +368,29 @@ body {
   justify-content: space-between;
 }
 
+.commands-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  color: var(--social-standart-color);
+}
+
 .commands-icon {
   display: block;
-  fill: var(--social-standart-color);
 }
 
-.commands-icon:hover {
+.commands-link:hover {
   background-color: var(--activ-logo-color);
-  border-radius: 50%;
   fill: var(--color-main-light);
 }
 
-.commands-link:focus .commands-icon {
-  fill: var(--color-main-light);
+.commands-link:focus {
   background-color: var(--activ-logo-color);
-  border-radius: 50%;
+  fill: var(--color-main-light);
 }
 
 /* clients */
@@ -493,23 +501,27 @@ body {
   gap: var(--footer-soc-gap);
 }
 
-.footer-icon {
-  display: block;
-  fill: var(--color-main-light);
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--footer-social-color);
 }
 
-.footer-icon:hover {
-  background-color: var(--activ-logo-color);
-  border-radius: 50%;
+.footer-icon {
+  display: flex;
   fill: var(--color-main-light);
 }
 
-.footer-social-link:focus .footer-icon {
+.footer-social-link:hover {
   background-color: var(--activ-logo-color);
-  border-radius: 50%;
-  fill: var(--color-main-light);
+}
+
+.footer-social-link:focus {
+  background-color: var(--activ-logo-color);
 }
 
 /* portfolio */
